@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rest_time_list">
+        <item>@string/time_10min</item>
+        <item>@string/time_15min</item>
+        <item>@string/time_30min</item>
+    </string-array>
+    <string-array name="value_rest_time_list">
+        <item>@string/time_10min</item>
+        <item>@string/time_15min</item>
+        <item>@string/time_30min</item>
+    </string-array>
+    <string-array name="learn_time_list">
+        <item>@string/time_30min</item>
+        <item>@string/time_45min</item>
+        <item>@string/time_60min</item>
+    </string-array>
+    <string-array name="value_learn_time_list">
+        <item>@string/time_30min</item>
+        <item>@string/time_45min</item>
+        <item>@string/time_60min</item>
+    </string-array>
+</resources>

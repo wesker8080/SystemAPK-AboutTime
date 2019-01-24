@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_top_view"
+              android:layout_width="wrap_content"
+              android:layout_height="47dp"
+                android:visibility="gone"
+                android:background="@color/colorTitleBackground">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            >
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_menu_back"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_title_back"
+                android:clickable="false"
+                android:text="@string/system_time_lock_summary"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTitle"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"/>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTitle"
+                android:text="@string/button_save"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:textColor="@color/colorTitleBackground"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+</RelativeLayout>

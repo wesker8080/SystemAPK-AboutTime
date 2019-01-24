@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/system_time_lock_summary"
+    android:id="@android:id/list"
+    >
+<!--<PreferenceCategory
+    android:layout="@layout/layout_top_view">
+</PreferenceCategory>-->
+    <SwitchPreference
+        android:key="time_lock_switch"
+        android:title="@string/system_time_lock_close"
+         />
+    <Preference
+        android:key="time_lock_summary"
+        android:enabled="false"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:summary="@string/system_time_lock_features"/>
+    <PreferenceCategory
+        android:key="list_available_time_period"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/available_time_period">
+
+    </PreferenceCategory>
+
+    <Preference
+        android:key="add_available_time_period"
+        android:shouldDisableView="true"
+        android:enabled="false"
+        android:title="@string/add_available_time_period"
+        />
+    <PreferenceCategory
+        android:key="list_available_time"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/available_time"
+        />
+    <Preference
+        android:key="add_available_time"
+        android:enabled="false"
+        android:title="@string/add_available_time"
+        />
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/rest"
+        />
+    <SwitchPreference
+        android:key="rest_switch"
+        android:enabled="false"
+        android:title="@string/rest_switch"
+        />
+    <ListPreference
+        android:key="learn_time"
+        android:enabled="false"
+        android:title="@string/learn_time"
+        android:summary="45分钟"
+        android:entries="@array/learn_time_list"
+        android:entryValues="@array/value_learn_time_list"
+        android:defaultValue="2"
+        android:dialogTitle="@string/ach_learning_time"
+
+        />
+    <ListPreference
+        android:key="rest_time"
+        android:enabled="false"
+        android:title="@string/rest_time"
+        android:summary="10分钟"
+        android:defaultValue="5"
+        android:entryValues="@array/value_rest_time_list"
+        android:entries="@array/rest_time_list"
+        />
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/time_lock_password"
+        />
+    <Preference
+        android:key="modify_time_lock_password"
+        android:enabled="false"
+        android:title="@string/modify_time_lock_password"
+        />
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPassword"
+              android:paddingStart="20dp"
+              android:paddingEnd="20dp">
+        <TextView
+            android:id="@+id/tv_entry_password_tip"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMain"
+            android:text="@string/text_rest_time"/>
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/et_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:hint="@string/time_lock_password"/>
+</LinearLayout>
